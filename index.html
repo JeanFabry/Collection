@@ -1,136 +1,299 @@
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html lang="en">
 
- <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Hello Bulma!</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-     <link rel="stylesheet" href="./stylesheet.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Collection </title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <!-- <link rel="stylesheet" href="./debug.css"> -->
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+</head>
 
- <body class="container">
-      <section class="section is-flex"> <!-- stopped here -->
-             <div class="card width">
-                 <div class="card-image">
-                     <figure class="image is-128x128">
-                         <img src="./Images/118831601_1300x1733.jpg" alt="Placeholder image">
-                     </figure>
-                 </div>
-                 <div class="card-content margin-top mt-5">
-                     <div class="media">
-                         <div class="media-content">
-                             <p class="title is-4">Sex Education</p>
-                             <p class="subtitle is-6">@johnsmith</p>
-                         </div>
-                     </div>
+<body class="container">
+    <header class="section">
+        <div class="column header">
+            <figure class="image is-128x128">
+                <img class="is-rounded" src="./Images/rognée.jpg" alt="profile picture">
+            </figure>
 
-                     <div class="content">
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                         <a href="#">#css</a> <a href="#">#responsive</a>
-                         <br>
-                         <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                     </div>
-                 </div>
-             </div>
-         
-         <div class="card width">
-             <div class="card-image">
-                 <figure class="image is-128x128">
-                     <img src="./Images/118831601_1300x1733.jpg" alt="Placeholder image">
-                 </figure>
-             </div>
-             <div class="card-content">
-                 <div class="media">
-                     <div class="media-content">
-                         <p class="title is-4">Sex Education</p>
-                         <p class="subtitle is-6">@johnsmith</p>
-                     </div>
-                 </div>
-
-                 <div class="content">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                     <a href="#">#css</a> <a href="#">#responsive</a>
-                     <br>
-                     <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                 </div>
-             </div>
-         </div>
-        
-         <div class="card width">
-            <div class="card-image">
-                <figure class="image is-128x128">
-                    <img src="./Images/118831601_1300x1733.jpg" alt="Placeholder image">
-                </figure>
+            <div class="header h1">
+                <h1 class="title">
+                    My collection of series, by Jean Fabry
+                </h1>
+                <p class="description">Here you'll find some of my favorite series from the 2000's to nowadays. </p>
             </div>
-            <div class="card-content margin-top mt-5">
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-4">Sex Education</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+        </div>
+    </header>
+
+
+    <section class="container my-4">
+        <div class="columns">
+            <!-- Westworld -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/2ff6fbb0986d3e24ee675879a79b1827.jpg" alt="Westworld image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-dark">Science-Fiction</span>
+                        <span class="tag is-link">AI & Robots</span>
+                        <p class="title is-4 my-1">Westworld</p>
+                        <p class="subtitle is-6 my-1">By Jonathan Nolan </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">Un parc d'attractions peuplé de robots propose aux visiteurs de se replonger dans plusieurs époques. 
+                                Lancés dans l'ouest sauvage, deux amis se retrouvent plongés en plein cauchemar quand l'un des androïdes se détraque et les prend en chasse.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=9BqKiZhEFFw&ab_channel=WarnerBros.UK%26Ireland" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
                     </div>
                 </div>
+            </div>
 
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            <!-- Final Space -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/5248391.jpg" alt="Final Space image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-success">Comédie</span>
+                        <span class="tag is-warning">Animation</span>
+                        <p class="title is-4 my-1">Final Space</p>
+                        <p class="subtitle is-6 my-1">By Olan Rogers </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">L'astronaute Gary et son acolyte Mooncake le destructeur 
+                                de planètes, voyagent dans l'espace pour trouver où l'univers s'arrête réellement.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=Fy2wlCa31-M&ab_channel=OlanRogers" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <!--Breaking Bad -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/75457887.jpg" alt="Breaking Bad image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-danger">Crime</span>
+                        <span class="tag is-black">Drame</span>
+                        <p class="title is-4 my-1">Breaking Bad</p>
+                        <p class="subtitle is-6 my-1">By Mark Johnson </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">Walter White, 50 ans, est professeur de chimie dans un lycée du Nouveau-Mexique. 
+                                Pour réunir de l'argent afin de subvenir aux besoins de sa famille, Walter met ses connaissances en chimie à profit pour fabriquer et vendre du crystal meth.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=HhesaQXLuRY&ab_channel=TrailerBlend" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <!--Chernobyl -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/Chernobyl.jpg" alt="Affiche de chernobyl">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-black">Drame</span>
+                        <span class="tag is-info">Historique</span>
+                        <p class="title is-4 my-1">Chernobyl</p>
+                        <p class="subtitle is-6 my-1">By Craig Mazin </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">26 avril 1986, l'histoire vraie de la pire catastrophe causée
+                                par l'homme et
+                                de
+                                ceux qui
+                                ont
+                                sacrifié leur vie pour sauver l'Europe du drame.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=s9APLXM9Ei8&feature=emb_title" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="columns my-5">
+            <!--Sex Education -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/118831601_1300x1733.jpg" alt="Sex Eduction image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-success">Comédie</span>
+                        <span class="tag is-danger">Sexualité</span>
+                        <p class="title is-4 my-1">Sex Education</p>
+                        <p class="subtitle is-6 my-1">By Laurie Nunn </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">La rebelle Maeve entraîne Otis, un ado vierge mais dont la mère 
+                                est sexologue, dans la création d'une cellule de thérapie sexuelle clandestine au sein de leur lycée.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=Hd2ldTR-WpI&ab_channel=RottenTomatoesTV" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sherlock -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/Sherlock.jpg" alt="Sherlock Image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-primary">Série à énigme </span>
+                        <span class="tag is-danger">Crime</span>
+                        <p class="title is-4 my-1">Sherlock</p>
+                        <p class="subtitle is-6 my-1">By Sue Vertue </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">Dans cette nouvelle adaptation des fameuses intrigues d'Arthur Conan Doyle, 
+                                l'excentrique détective recherche des indices dans les rues de Londres.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=xK7S9mrFWL4&ab_channel=TheEmptyHearse" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <!--When they see us -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/MV5BZmJjM2YzOWEtOTYxYi00YjhkLTliMzgtMTA2MTc0NDQ1MDM4XkEyXkFqcGdeQXVyODY5OTk4MA@@._V1_.jpg" alt="When they see us Image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-black">Drame</span>
+                        <span class="tag is-info">Historique</span>
+                        <p class="title is-4 my-1">When they see us</p>
+                        <p class="subtitle is-6 my-1">By Ava DuVernay </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">Cette série expose l'effondrement du système judiciaire pénal américain lors de l'affaire Central 
+                                Park Five, une affaire traitant d'une joggeuse de 28 ans agressée et violée en 1989 à Central Park.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=KyIrJeK2DKY&ab_channel=KinoCheckInternational" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+             <!--Game of thrones -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg" alt="Game of Thrones image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-light">Héroïque Fantaisie</span>
+                        <span class="tag is-success">Aventure</span>
+                        <p class="title is-4 my-1">Game of Thrones</p>
+                        <p class="subtitle is-6 my-1">By George R. R. Martin </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">Neuf familles nobles rivalisent pour le contrôle du Trône de Fer 
+                                dans les sept royaumes de Westeros. Pendant ce temps, des anciennes créatures mythiques oubliées reviennent pour faire des ravages.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=gcTkNV5Vg1E&ab_channel=VERITASERUMUK" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="card width">
-            <div class="card-image">
-                <figure class="image is-128x128">
-                    <img src="./Images/118831601_1300x1733.jpg" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content margin-top mt-5">
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-4">Sex Education</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+
+        <div class="columns my-6">
+
+            <!--How I met your mother -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/57be6c2a9fba454eceb24c0ecd28206c.jpg" alt="How I met your mother image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-success">Comédie</span>
+                        <span class="tag is-primary">Sitcom</span>
+                        <p class="title is-4 my-1">How I met your mother</p>
+                        <p class="subtitle is-6 my-1">By Carter Bays </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">La série débute en 2030, lorsque Ted Mosby raconte à ses deux enfants 
+                                comment il a rencontré leur mère. Il se remémore ses jeunes années, et le pilote fait place aux souvenirs de Ted en 2005, où il apprend que son meilleur ami Marshall Eriksen va demander à Lily Aldrin de l'épouser. Ted se demande quand il rencontrera sa future épouse. Et c'est ainsi que commence l'incroyable et très longue histoire de Ted, jusqu'à sa rencontre avec la fameuse mère.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=aJtVL2_fA5w&ab_channel=CokeNpopcorn" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
                     </div>
                 </div>
-
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
             </div>
-        </div>
 
-        <div class="card width">
-            <div class="card-image">
-                <figure class="image is-128x128">
-                    <img src="./Images/118831601_1300x1733.jpg" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content margin-top mt-5">
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-4">Sex Education</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+            <!--Peaky Blinders -->
+            <div class="column is-3">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <img src="./Images/peaky-blinders.jpg" alt="Peaky Blinders Image">
+
+                    </div>
+                    <div class="card-content">
+                        <span class="tag is-black">Drame</span>
+                        <span class="tag is-danger">Crime</span>
+                        <p class="title is-4 my-1">Peaky Blinders</p>
+                        <p class="subtitle is-6 my-1">By Katie Swinden </p>
+                        <div class="content mt-3 ">
+                            <p class="has-text-justified">Birmingham, en 1919. Un gang familial règne sur un quartier de la ville : les Peaky Blinders, ainsi nommés
+                                 pour les lames de rasoir qu'ils cachent dans la visière de leur casquette.
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://www.youtube.com/watch?v=oVzVdvGIC7U&ab_channel=Alextvshows" target="_blank"
+                                class="card-footer-item"><i class="fab fa-youtube fa-2x"></i></a>
+                        </footer>
                     </div>
                 </div>
-
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
             </div>
-        </div>
-     </section>
- </body>
 
- </html>
+
+    </section>
+</body>
+
+</html>

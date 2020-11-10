@@ -1,3 +1,51 @@
-.width {
-    width:15%;
+.column.header {
+    display: flex;
+    flex-direction: row;
+}
+h1.title {
+    margin: 10px 20px;
+} 
+p.description {
+    margin: 20px;
+}
+.card {
+    height: 100%;
+}
+.card-footer {
+    position: absolute;
+    bottom: 1px;
+    left: 40%;
+    border: none;
+}
+img.img-terror{
+    height: 333px;
+}
+.fab {
+    color: red;
+    transition-duration: 1s;
+}
+.fab:hover {
+    color: rgba(0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .column.header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .is-rounded{
+        display: flex;
+        justify-content: center;
+    }
+    img.img-terror{
+        height: auto;
+    }
+}
+@media screen and (max-width: 1200px) {
+    img.img-terror{
+        height: auto;
+    }
 }
