@@ -10,7 +10,13 @@ p.description {
 }
 .card {
     height: 100%;
+    transition:  0.3s ease;
 }
+
+.card:hover{
+    transform:scale(1.04);
+}
+
 .card-footer {
     position: absolute;
     bottom: 1px;
