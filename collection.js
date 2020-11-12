@@ -3,7 +3,7 @@ const collection = [{
         author: 'Jonathan Nolan',
         category: [{
                 Name: 'Science-Fiction',
-                Style: "tag is-dark mr-2"
+                Style: "tag is-dark mx-2"
             },
             {
                 Name: 'AI & Robots',
@@ -20,7 +20,7 @@ const collection = [{
         author: 'Olan Rogers',
         category: [{
                 Name: 'Comédie',
-                Style: "tag is-success mr-2"
+                Style: "tag is-success mx-2"
             },
             {
                 Name: 'Animation',
@@ -37,7 +37,7 @@ const collection = [{
         author: 'Mark Johnson',
         category: [{
                 Name: 'Crime',
-                Style: "tag is-danger mr-2"
+                Style: "tag is-danger mx-2"
             },
             {
                 Name: 'Drame',
@@ -54,7 +54,7 @@ const collection = [{
         author: 'Craig Mazin',
         category: [{
                 Name: 'Drame',
-                Style: "tag is-black mr-2"
+                Style: "tag is-black mx-2"
             },
             {
                 Name: 'Historique',
@@ -72,7 +72,7 @@ const collection = [{
         author: 'Laurie Nunn',
         category: [{
                 Name: 'Comédie',
-                Style: "tag is-success mr-2"
+                Style: "tag is-success mx-2"
             },
             {
                 Name: 'Sexualité',
@@ -90,7 +90,7 @@ const collection = [{
         category: [
             {
                 Name: 'Série à énigme',
-                Style: "tag is-primary mr-2"
+                Style: "tag is-primary mx-2"
             },
             {
                 Name: 'crime',
@@ -108,7 +108,7 @@ const collection = [{
         category: [  
             {
                 Name: 'Drame',
-                Style: "tag is-black mr-2"
+                Style: "tag is-black mx-2"
             },
             {
                 Name: 'Historique',
@@ -126,7 +126,7 @@ const collection = [{
         category: [  
             {
                 Name: 'Héroïque Fantaisie',
-                Style: "tag is-light mr-2"
+                Style: "tag is-light mx-2"
             },
             {
                 Name: 'Aventure',
@@ -144,7 +144,7 @@ const collection = [{
         category: [  
             {
                 Name: 'Comédie',
-                Style: "tag is-success mr-2"
+                Style: "tag is-success mx-2"
             },
             {
                 Name: 'Sitcom',
@@ -162,7 +162,7 @@ const collection = [{
         category: [  
             {
                 Name: 'Drame',
-                Style: "tag is-black mr-2"
+                Style: "tag is-black mx-2"
             },
             {
                 Name: 'Crime',
@@ -205,20 +205,26 @@ for (let element of collection) {
 
     const author = document.createElement('h2');
     author.innerText = element.author;
-    author.className="subtitle is-6 my-3";
+    author.className="subtitle is-6 mx-2 my-3";
 
+    
     const description = document.createElement("p");
     description.textContent = element.description;
+    description.className="has-text-justified mx-2";
+    const divdesciption = document.createElement("div");
+    divdesciption.appendChild(description);
+    divdesciption.style.marginBottom="50px";
 
-    const footer = document.createElement("footer")
-    footer.className = "card-footer"
+    const footer = document.createElement("footer");
+    footer.className = "card-footer";
 
-    const youtube = document.createElement("a")
-    youtube.className = "card-footer-item fas fa-2x"
-    youtube.href = element.link
-    youtube.target = "_blank"
 
-    const lien = document.createElement("i")
+    const youtube = document.createElement("a");
+    youtube.className = "card-footer-item fas fa-2x";
+    youtube.href = element.link;
+    youtube.target = "_blank";
+
+    const lien = document.createElement("i");
     lien.className = "fab fa-youtube";
 
     card.appendChild(image);
@@ -231,7 +237,7 @@ for (let element of collection) {
         card.appendChild(tag1);
     }
     card.appendChild(author);
-    card.appendChild(description);
+    card.appendChild(divdesciption);
     footer.appendChild(youtube);
     youtube.appendChild(lien);
     card.appendChild(footer);
