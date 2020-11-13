@@ -87,8 +87,7 @@ const collection = [{
     {
         title: 'Sherlock',
         author: 'Sue Vertue',
-        category: [
-            {
+        category: [{
                 Name: 'Série à énigme',
                 Style: "tag is-primary mx-2"
             },
@@ -105,8 +104,7 @@ const collection = [{
     {
         title: 'When they see us',
         author: 'Ava DuVernay',
-        category: [  
-            {
+        category: [{
                 Name: 'Drame',
                 Style: "tag is-black mx-2"
             },
@@ -123,8 +121,7 @@ const collection = [{
     {
         title: 'Game of thrones',
         author: 'George R. R. Martin',
-        category: [  
-            {
+        category: [{
                 Name: 'Héroïque Fantaisie',
                 Style: "tag is-light mx-2"
             },
@@ -141,8 +138,7 @@ const collection = [{
     {
         title: 'How I met your mother',
         author: 'Carter Bays',
-        category: [  
-            {
+        category: [{
                 Name: 'Comédie',
                 Style: "tag is-success mx-2"
             },
@@ -159,8 +155,7 @@ const collection = [{
     {
         title: 'Peaky Blinders',
         author: 'Katie Swinden',
-        category: [  
-            {
+        category: [{
                 Name: 'Drame',
                 Style: "tag is-black mx-2"
             },
@@ -175,74 +170,3 @@ const collection = [{
     },
 ]
 
-
-const body = document.querySelector('section');
-body.innerHTML = '';
-body.className = 'container my-4'
-const divColA = document.createElement("div");
-divColA.className = "columns is-flex-wrap-wrap";
-// divCola.style.display = "flex";
-// div.style.width ="300px";
-// div.style.flexDirection="row";
-
-
-for (let element of collection) {
-
-    const div = document.createElement("div");
-    div.className = 'column is-3';
-
-
-    const card = document.createElement("div");
-    card.className = 'card';
-    card.style.boxShadow= '1px 1px 10px grey';
-
-    const image = document.createElement("img");
-    image.src = element.image;
-
-    const title = document.createElement("h1");
-    title.className = 'title is-4 mt-2';
-    title.textContent = element.title;
-
-    const author = document.createElement('h2');
-    author.innerText = element.author;
-    author.className="subtitle is-6 mx-2 my-3";
-
-    
-    const description = document.createElement("p");
-    description.textContent = element.description;
-    description.className="has-text-justified mx-2";
-    const divdesciption = document.createElement("div");
-    divdesciption.appendChild(description);
-    divdesciption.style.marginBottom="50px";
-
-    const footer = document.createElement("footer");
-    footer.className = "card-footer";
-
-
-    const youtube = document.createElement("a");
-    youtube.className = "card-footer-item fas fa-2x";
-    youtube.href = element.link;
-    youtube.target = "_blank";
-
-    const lien = document.createElement("i");
-    lien.className = "fab fa-youtube";
-
-    card.appendChild(image);
-    card.appendChild(title);
-
-    for (let tag of element.category) {
-        const tag1 = document.createElement('span');
-        tag1.innerText = tag.Name;
-        tag1.className = tag.Style;
-        card.appendChild(tag1);
-    }
-    card.appendChild(author);
-    card.appendChild(divdesciption);
-    footer.appendChild(youtube);
-    youtube.appendChild(lien);
-    card.appendChild(footer);
-    div.appendChild(card);
-
-    divColA.appendChild(div);
-    body.appendChild(divColA);
-}
