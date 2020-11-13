@@ -1,6 +1,3 @@
-const body = document.querySelector('section');
-body.innerHTML = '';
-body.className = 'container my-4'
 
 // const buttonDrame = document.createElement("button");
 // buttonDrame.className = "button";
@@ -10,44 +7,58 @@ body.className = 'container my-4'
 // buttonDrame.className = "button";
 // buttonDrame.innerText = "All";
 
+// const serieEnDeuxMots = [];
+// for (let element of collection) {
+//     if (element.title.match(' ')) {
+//         ;
+//         serieEnDeuxMots.push(element);
+//     }
+// }
+
+// const serieCommencantParUnW = [];
+// for (let element of collection) {
+//     if (element.title.startsWith('W')) {
+//         ;
+//         serieCommencantParUnW.push(element);
+//     }
+// }
+
+// const seriedrame = [];
+// // const showdrame = () => {
+// for (let element of collection) {
+//     if (element.category.find(c => c.Name === 'Drame')) {
+//         seriedrame.push(element);
+//     }
+// }
+// //     collection=seriedrame;
+// // }
+// // buttonDrame.addEventListener("click", showdrame());
+
+
+
+const body = document.querySelector('section');
+body.innerHTML = '';
+body.className = 'container my-4'
 
 const divColA = document.createElement("div");
 divColA.className = "columns is-flex-wrap-wrap";
 
+const form= document.createElement("input");
+form.className="input mx-6";
+body.appendChild(form);
+form.addEventListener('change', inputSearchWords => {
+	filterSeries(inputSearchWords.target.value);
+})
+
+const dropdown = document.createElement("div")
 
 
-const serieEnDeuxMots = [];
-for (let element of collection) {
-    if (element.title.match(' ')) {
-        ;
-        serieEnDeuxMots.push(element);
-    }
-}
 
-const serieCommencantParUnW = [];
-for (let element of collection) {
-    if (element.title.startsWith('W')) {
-        ;
-        serieCommencantParUnW.push(element);
-    }
-}
-
-const seriedrame = [];
-// const showdrame = () => {
-for (let element of collection) {
-    if (element.category.find(c => c.Name === 'Drame')) {
-        seriedrame.push(element);
-    }
-}
-//     collection=seriedrame;
-// }
-// buttonDrame.addEventListener("click", showdrame());
-
-function filterSeries(pattern) {
-    const results = []
+function filterSeries(searchWords) {
+    let results = []
 
     for (let serie of collection) {
-        if (serie.title.match(pattern) || serie.description.match(pattern)) {
+        if (serie.title.match(searchWords) || serie.description.match(searchWords)) {
             results.push(serie)
         }
     }
@@ -115,9 +126,3 @@ function filterSeries(pattern) {
         body.appendChild(divColA);
     }
 }
-
-const form= document.createElement("input");
-body.appendChild(form);
-form.addEventListener('change', input => {
-	filterSeries(input.target.value)
-})
