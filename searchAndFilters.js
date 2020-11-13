@@ -1,11 +1,3 @@
-// const buttonDrame = document.createElement("button");
-// buttonDrame.className = "button";
-// buttonDrame.innerText = "Drame";
-
-// const buttonAll = document.createElement("button");
-// buttonDrame.className = "button";
-// buttonDrame.innerText = "All";
-
 // const serieEnDeuxMots = [];
 // for (let element of collection) {
 //     if (element.title.match(' ')) {
@@ -37,18 +29,63 @@ const body = document.querySelector("section");
 body.innerHTML = "";
 body.className = "container my-4";
 
+const divResearch = document.createElement("div");
+body.appendChild(divResearch);
+divResearch.style.display = "flex";
+divResearch.style.justifyContent = "center";
+
+    const form = document.createElement("input");
+    form.className = "input mb-6";
+    form.style.width = "50%";
+    form.placeholder = "Feel free to search for a specific serie here";
+    divResearch.appendChild(form);
+    form.addEventListener("change", function (inputSearchWords) {
+    filterSeries(inputSearchWords.target.value);
+    });
+
+    // const divDropdown = document.createElement("div");
+    // divResearch.appendChild(divDropdown);
+    // divDropdown.style.display="flex";
+    // divDropdown.style.flexDirection = "column";
+
+    //     const dropCategory = document.createElement("div");
+    //     dropCategory.className = "button";
+    //     dropCategory.innerText = "Research category";
+    //     divDropdown.appendChild(dropCategory);
+    //     dropCategory.addEventListener("mouseover", function () {
+    //     dropCategoryUnder.style.display = "flex";
+    //     dropCategoryUnder.style.flexDirection = "row-reverse";
+    //     }); 
+        
+    //     const dropCategoryUnder = document.createElement("div");
+    //     dropCategoryUnder.style.display = "none";
+    //     divDropdown.appendChild(dropCategoryUnder);
+
+    //         // const dropTitle = document.createElement("div");
+    //         // dropCategoryUnder.appendChild(dropTitle);
+    //         // dropCategoryUnder.className = "button";
+    //         // dropCategoryUnder.innerText = "Title";
+
+    //         const dropAuthor = document.createElement("div");
+    //         dropCategoryUnder.appendChild(dropAuthor);
+    //         dropCategoryUnder.className = "button";
+    //         dropCategoryUnder.innerText = "Author";
+    //         dropAuthor.addEventListener("mouseover", function (){
+    //             dropAuthor.style.backgroundColor="blue";
+    //         })
+
+
+
+    const buttonHome = document.createElement("button");
+    buttonHome.className = "button";
+    buttonHome.innerText = "Home";
+    buttonHome.addEventListener("click", function () {
+    window.location = "";
+    });
+    divResearch.appendChild(buttonHome);
+
 let divColA = document.createElement("div");
 divColA.className = "columns is-flex-wrap-wrap";
-
-const form = document.createElement("input");
-form.className = "input mb-6";
-form.placeholder = "Feel free to search for a specific serie here";
-body.appendChild(form);
-form.addEventListener("change", function (inputSearchWords) {
-  filterSeries(inputSearchWords.target.value);
-});
-
-// const dropdown = document.createElement("div");
 
 for (let element of collection) {
   const div = document.createElement("div");
@@ -117,8 +154,6 @@ for (let element of collection) {
   card.appendChild(footer);
   div.appendChild(card);
   divColA.appendChild(div);
-  // body.appendChild(buttonAll);
-  // body.appendChild(buttonDrame);
   body.appendChild(divColA);
 }
 
@@ -203,8 +238,6 @@ function filterSeries(searchWords) {
     card.appendChild(footer);
     div.appendChild(card);
     divColA.appendChild(div);
-    // body.appendChild(buttonAll);
-    // body.appendChild(buttonDrame);
     body.appendChild(divColA);
   }
 }
