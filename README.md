@@ -26,4 +26,5 @@ For this exercise, I learned to use the bulma framework.
 * CSS3
 
 # What does it look like ? 
-![Preview](https://raw.githubusercontent.com/JeanFabry/Collection/master/Images/preview.png)
+Have a quick look [here](https://jeanfabry.github.io/Collection/)
+[![Preview](https://raw.githubusercontent.com/JeanFabry/Collection/master/Images/preview.png)](https://jeanfabry.github.io/Collection/)
