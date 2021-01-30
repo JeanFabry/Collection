@@ -3,7 +3,7 @@
 This exercice was made by [Jean Fabry](https://github.com/JeanFabry). 
 # What was asked ?
 
-We needed to re-create a webpage while following some [instructions](https://github.com/becodeorg/bxl-hopper-1-25/tree/master/The%20Field/5.leaving_the_field).
+We needed to re-create a webpage containing a list of our favorite series while following some [instructions](https://github.com/becodeorg/bxl-hopper-1-25/tree/master/The%20Field/5.leaving_the_field). The list had to be generated in javascript.
 
 # What did we do ?
 I used some [Bulma](https://bulma.io/documentation/components/)'s documentation, to create a card list of my favorite series.
